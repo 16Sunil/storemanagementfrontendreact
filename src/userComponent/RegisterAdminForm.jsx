@@ -47,7 +47,116 @@ const RegisterAdminForm = () => {
           </div>
           <div className="card-body">
             <form>
-              {/* ... (your existing form fields) ... */}
+            <div class="mb-3">
+                <label for="title" class="form-label">
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  onChange={handleUserInput}
+                  value={user.firstName}
+                />
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  onChange={handleUserInput}
+                  value={user.lastName}
+                />
+              </div>
+
+              <div className="mb-3">
+                <label className="form-label">Email Id</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailId"
+                  name="emailId"
+                  onChange={handleUserInput}
+                  value={user.emailId}
+                />
+              </div>
+
+              <div class="mb-3 mt-1">
+                <label for="quantity" class="form-label">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  onChange={handleUserInput}
+                  value={user.password}
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="price" class="form-label">
+                  Mobile No
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="phoneNo"
+                  name="phoneNo"
+                  onChange={handleUserInput}
+                  value={user.phoneNo}
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="description" class="form-label">
+                  Street
+                </label>
+                <textarea
+                  class="form-control"
+                  id="street"
+                  name="street"
+                  rows="3"
+                  onChange={handleUserInput}
+                  value={user.street}
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="price" class="form-label">
+                  City
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  name="city"
+                  onChange={handleUserInput}
+                  value={user.city}
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="pincode" class="form-label">
+                  Pincode
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="pincode"
+                  name="pincode"
+                  onChange={handleUserInput}
+                  value={user.pincode}
+                />
+              </div>
+
+            
               <button
   type="submit"
   style={{ backgroundColor: 'blue', color: 'white' }}

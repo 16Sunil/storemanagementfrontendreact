@@ -2,11 +2,7 @@ import React, { useState, useEffect } from "react";
 //import carousel1 from "../images/carousel_1.jpeg";
 
 const Carousel = () => {
-  <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over Rs.499
-        </p>
-</header>
+ 
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
 
